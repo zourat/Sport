@@ -1,0 +1,13 @@
+<app-banner [X]="title"></app-banner>
+<div *ngFor="let findedMatch of matches">
+    <div >
+        <app-result [match]="findedMatch" (newMatches)="updateMatches($event)"></app-result>
+    </div>
+</div>
+
+<!-- 
+
+<app-result></app-result>
+<app-result></app-result> 
+
+-->
